@@ -2,6 +2,13 @@
     <head>
         <title>学生信息管理系统</title>
     </head>
+    <script>
+        function doDel(id) {
+            if (confirm("确定要删除吗？")){
+                window.location = 'action.php?action=del&id=' + id;
+            }
+        }
+    </script>
     <body>
         <center>
             <?php
